@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/vue@next"></script>
+
+	<title>Zooov</title>
+</head>
+
+<body id="app">
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__body body">
+				<img src="/img/icons/logo.png" alt="Логотип" class="header__logo">
+				<nav class="header__nav">
+					<a href="#barf">BARF</a>
+					<a href="#rations">Рационы</a>
+					<a href="#zooov">ZOOOV</a>
+					<a href="#about">О нас</a>
+					<a href="#delivery">Доставка</a>
+					<a href="#faq">FAQ</a>
+					<a href="#contact">Контакты</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<div class="main__body body">
+				<h1 class="main__title title"><span>Питание,</span> которое полюбит ваш хвостик</h1>
+				<p class="main__subtitle">Натуральные рационы питания для собак по системе BARF</p>
+				<a href="#rations" class="main__link button">Выбрать рацион</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="barf" id="barf">
+		<div class="container">
+			<div class="barf__body body">
+				<div class="barf__content">
+					<h2 class="barf__title title">Что такое BARF</h2>
+					<p class="barf__description">BARF (Biologically Appropriate Raw Food) — система питания собак, основанная
+						на сырых
+						натуральных продуктах. Такой
+						рацион максимально приближен к естественному пищевому поведению хищников, а значит биологически
+						правилен.</p>
+					<ul class="barf__list">
+						<p>После перехода на питание по системе BARF у собак:</p>
+						<li>Нормализуется пищеварение</li>
+						<li>Проходят аллергические реакции</li>
+						<li>Прекращается образование зубного камня</li>
+						<li>Появляется больше энергии</li>
+						<li>Увеличивается продолжительность жизни</li>
+					</ul>
+				</div>
+				<img src="/img/Rectangle1.png" alt="Питание для собак" class="barf__image">
+				<div class="barf__nutrition nutrition">
+					<div class="nutrition__adult">
+						<p class="nutrition__title">Для взрослых</p>
+						<ul class="nutrition__list">
+							<div>
+								<li><img src="/img/icons/1.svg" alt="Мясо">Мясо – 70%</li>
+								<li><img src="/img/icons/2.svg" alt="Кости">Кости – 10%</li>
+								<li><img src="/img/icons/3.svg" alt="Овощи">Овощи – 7%</li>
+								<li><img src="/img/icons/4.svg" alt="Печень">Печень – 5%</li>
+							</div>
+							<div>
+								<li><img src="/img/icons/5.svg" alt="Субпродукты">Субпродукты – 5%</li>
+								<li><img src="/img/icons/6.svg" alt="Семена/Орехи">Семена/Орехи – 2%</li>
+								<li><img src="/img/icons/7.png" alt="Фрукты">Фрукты – 1%</li>
+							</div>
+						</ul>
+					</div>
+					<div class="nutrition__puppies">
+						<p class="nutrition__title">Для щенков</p>
+						<ul class="nutrition__list">
+							<div>
+								<li><img src="/img/icons/1.svg" alt="Мясо">Мясо – 58%</li>
+								<li><img src="/img/icons/2.svg" alt="Кости">Кости – 17%</li>
+								<li><img src="/img/icons/3.svg" alt="Овощи">Овощи – 7%</li>
+								<li><img src="/img/icons/4.svg" alt="Печень">Печень – 7%</li>
+							</div>
+							<div>
+								<li><img src="/img/icons/5.svg" alt="Субпродукты">Субпродукты – 7%</li>
+								<li><img src="/img/icons/6.svg" alt="Семена/Орехи">Семена/Орехи – 3%</li>
+								<li><img src="/img/icons/7.png" alt="Фрукты">Фрукты – 1%</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="rations" id="rations">
+		<div class="container">
+			<div class="rations__body body">
+				<div class="rations__title-block">
+					<h2 class="rations__title title">Рационы ZOOOV</h2>
+					<p class="rations__descroption">Система питания взрослой собаки не подойдет для щенка, поэтому мы создали
+						разные
+						по составу рационы ZOOOV. Вы сможете заказать полноценное питание исходя из возраста, веса и даже
+						вкусовых
+						предпочтений
+						вашего друга. ZOOOV заботится о каждой собаке.</p>
+				</div>
+				<div class="rations__cards rations-cards">
+					<div class="rations-cards__item">
+						<img src="/img/r1.png" alt="Для взрослых собак" class="rations-cards__image">
+						<p class="rations-cards__title">Для взрослых собак</p>
+						<p class="rations-cards__subtitle">Индейка/Говядина</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-1" class="rations-cards__button button">Заказать</a>
+					</div>
+					<div class="rations-cards__item">
+						<img src="/img/r2.png" alt="Для щенков" class="rations-cards__image">
+						<p class="rations-cards__title">Для щенков</p>
+						<p class="rations-cards__subtitle">Индейка/Говядина</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-2" class="rations-cards__button button">Заказать</a>
+					</div>
+					<div class="rations-cards__item">
+						<img src="/img/r3.png" alt="Для взрослых собак" class="rations-cards__image">
+						<p class="rations-cards__title">Для взрослых собак</p>
+						<p class="rations-cards__subtitle">Баранина/Кролик</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-3" class="rations-cards__button button">Заказать</a>
+					</div>
+					<div class="rations-cards__item">
+						<img src="/img/r4.png" alt="Для щенков" class="rations-cards__image">
+						<p class="rations-cards__title">Для щенков</p>
+						<p class="rations-cards__subtitle">Баранина/Кролик</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-4" class="rations-cards__button button">Заказать</a>
+					</div>
+				</div>
+				<div class="rations__calculation">
+					<p>Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
+					<a href="#popup2" class="button">Расчитать</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="zooov" id="zooov">
+		<div class="container">
+			<div class="zooov__body body">
+				<h2 class="zooov__title title">Почему ZOOOV</h2>
+				<div class="zooov__cards cards">
+					<div class="cards__item">
+						<img src="/img/icons/Leaf.png" alt="Преимущество ZOOOV" class="cards__image">
+						<p class="cards__title">Натурально</p>
+						<p class="cards__subtitle">Все продукты тщательно отбираем у проверенных поставщиков.</p>
+					</div>
+					<div class="cards__item">
+						<img src="/img/icons/Heartbeat.png" alt="Преимущество ZOOOV" class="cards__image">
+						<p class="cards__title">Здорово</p>
+						<p class="cards__subtitle">Система питания, которая продлевает жизнь
+							вашего хвостика.</p>
+					</div>
+					<div class="cards__item">
+						<img src="/img/icons/RocketLaunch.png" alt="Преимущество ZOOOV" class="cards__image">
+						<p class="cards__title">Быстро</p>
+						<p class="cards__subtitle">Сделайте заказ на сайте
+							и с вами свяжется наш менеджер для уточнения деталей.</p>
+					</div>
+					<div class="cards__item">
+						<img src="/img/icons/Smiley.png" alt="Преимущество ZOOOV" class="cards__image">
+						<p class="cards__title">Удобно</p>
+						<p class="cards__subtitle">Достаточно разморозить порцию ZOOOV, удалить отрывную крышку с лотка и обед
+							для вашего питомца готов.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about__body body">
+				<div class="about__image">
+					<img src="/img/Rectangle2.png" alt=" ">
+					<img src="/img/Rectangle3.png" alt=" ">
+					<img src="/img/icons/IMG_1526.png" alt=" ">
+					<img src="/img/icons/IMG_1523.png" alt=" ">
+				</div>
+				<div class="about__content">
+					<h2 class="about__title title">С заботой и любовь от Zooov</h2>
+					<p class="about__text">
+						Мы сами владельцы собак и знаем, как важно правильное и качественное питание для долгой и счастливой
+						жизни вашего
+						питомца. Для нас ZOOOV это не просто бизнес, это наш вклад в повышение качества жизни всех собак.
+					</p>
+					<p class="about__text">
+						Мы знаем, как правильно подобрать и переработать мясо, субпродукты, овощи и фрукты, чтобы питание
+						вашего питомца было
+						максимально сбалансированным и полезным.
+					</p>
+					<p class="about__text">
+						Обычного сырого мяса из магазина будет недостаточно для полноценного питания собаки. ZOOOV — экономия
+						времени, вам не
+						придется искать необходимые составляющие для рациона.
+					</p>
+					<p class="about__text">
+						Мы сами отбираем мясо, кости, легкие, печень и другие говяжьи, кроличьи и птичьи субпродукты у
+						проверенных поставщиков.
+						Закупаем органические овощи и используем разнообразные масла, такие как конопляное и льняное.
+					</p>
+					<p class="about__text">
+						ZOOOV — это удобно, мы доставляем готовый рацион на две недели уже смешанным, расфасованным и
+						упакованным в порционные
+						лотки,готовыми к заморозке. За два часа до кормления достаточно переместить контейнер из морозилки в
+						холодильник для
+						ПРАВИЛЬНОЙ разморозки.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="delivery" id="delivery">
+		<div class="container">
+			<div class="delivery__body body">
+				<h2 class="delivery__title title">Как получить ZOOOV?</h2>
+				<div class="delivery__steps cards">
+					<div class="cards__item">
+						<div class="cards__image-wrap"><img src="/img/icons/Package.png" alt="Шаг 1"
+								class="cards__image little"><img src="/img/icons/Arrow.png" alt="arrow" class="cards__arrow">
+						</div>
+						<p class="cards__title">Закажите рацион</p>
+						<p class="cards__subtitle">Выберите рацион для своей собаки. Если не знаете сколько
+							и какой – <span>мы подскажем</span>.</p>
+					</div>
+					<div class="cards__item">
+						<div class="cards__image-wrap"><img src="/img/icons/PhoneCall.png" alt="Шаг 2"
+								class="cards__image"><img src="/img/icons/Arrow.png" alt="arrow" class="cards__arrow"></div>
+						<p class="cards__title">Подтвердите заказ</p>
+						<p class="cards__subtitle">Мы свяжемся с вами для подтверждения заказа
+							и уточнения деталей.</p>
+					</div>
+					<div class="cards__item">
+						<div class="cards__image-wrap"><img src="/img/icons/Clock.png" alt="Шаг 3" class="cards__image"><img
+								src="/img/icons/Arrow.png" alt="arrow" class="cards__arrow"></div>
+						<p class="cards__title">Ожидайте доставки</p>
+						<p class="cards__subtitle">Привозим заказ на следующий день. По СПб – 350₽, при заказе от 3 500₽ –
+							бесплатно. Лен. область – по договоренности.</p>
+					</div>
+					<div class="cards__item">
+						<div class="cards__image-wrap"><img src="/img/icons/Vector.png" alt="Шаг 4" class="cards__image"><img
+								src="/img/icons/Arrow.png" alt="arrow" class="cards__arrow"></div>
+						<p class="cards__title">Радуйте своего питомца</p>
+						<p class="cards__subtitle">Просто разморозьте рацион: при комнатной температуре – 3 часа, в
+							холодильнике – 12-15 часов.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="faq" id="faq">
+		<div class="container">
+			<div class="faq__body body">
+				<h2 class="faq__title title">Частые вопросы</h2>
+				<div class="faq__list">
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Не опасны ли бактерии, которые находятся в сыром мясе?</p>
+							<p class="faq__answer">У здоровых собак отличная иммунная система, готовая ко всем видам бактерий.
+								Рацион BARF как раз
+								укрепит иммунитет вашей
+								собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Надо ли давать дополнительно витамины к рациону BARF?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">А если моя собака уже давно питается промышленным кормом и у нее нет
+								проблем со здоровьем?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Можно ли смешивать натуральный корм и корм промышленного производства?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Могу ли я сам составить для своей собаки рацион по системе BARF?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Присутствует ли в ZOOOV рационах рыба?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Как перевести питомца на натуральное питание?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">Как готовить рацион ZOOOV?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__text">
+							<p class="faq__question">При переходе на рацион ZOOOV у собаки начались проблемы с ЖКТ. Это
+								нормально?</p>
+							<p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate
+								quae earum aliquam, possimus doloremque. Molestias quisquam alias quod ad natus debitis nemo,
+								sint tempore iure dignissimos eos, possimus voluptatibus? Autem enim laboriosam quo adipisci.
+							</p>
+						</div>
+						<div class="faq__controls"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="footer__body body">
+				<div class="footer__contact">
+					<h2 class="footer__title title">Контакты</h2>
+					<p class="footer__subtitle">Вы всегда можете с нами связаться
+						по телефону или в мессенджерах</p>
+					<p class="footer__phone">+7 (900)000-00-00</p>
+					<a href="#" class="footer__link whatsapp">Написать в WhatsApp</a>
+					<a href="#" class="footer__link telegram">Написать в Telegram</a>
+					<p>Подписывайтесь на наш <a href="#">Instagram</a>
+						и следите за новостями</p>
+				</div>
+				<div class="footer__form">
+					<p class="form__title">Остались вопросы?</p>
+					<p class="form__subtitle">Напишите нам и мы обязательно подробно на них ответим.</p>
+					<form action="#" class="form">
+						<input type="text" class="form__input" placeholder="Имя">
+						<input type="text" class="form__input" placeholder="Email">
+						<textarea name="message" id="message" placeholder="Ваш вопрос..." class="form__textarea"></textarea>
+						<div class="form__checkbox-block">
+							<input type="checkbox" name="consent" id="consent" class="form__checkbox">
+							<div class="form__fake-checkbox"></div>
+							<label for="consent" class="form__checkbox-label">Даю согласие на обработку
+								персональных данных</label>
+						</div>
+						<button type="submit" class="form__button button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			<div class="container">
+				<div class="footer__copyright-body body">
+					<p>ИП Коваленко Евгений Геннадьевич ИНН784215731801, адрес производства г. Санкт-Петербург 17-я линия В.О
+						66,
+						пом.
+						2/07</p>
+					<p>Публичная оферта</p>
+					<p>Политика конфеденциальности</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- POPUPS -->
+
+	<div class="rations-popup-1 rations-popup" :id="rations-popup-1">
+		<a href="#header" class="rations-popup__area"></a>
+		<div class="rations-popup__body">
+			<a href="#header" class="rations-popup__close"></a>
+			<div class="rations-popup__slider">
+				<img src="/img/r1.png" alt="рацион 1" class="rations-popup__main-slide">
+				<div class="rations-popup__slider-galary">
+					<img src="/img/prev1.png" alt=" ">
+					<img src="/img/prev2.png" alt=" ">
+					<img src="/img/prev3.png" alt=" ">
+				</div>
+			</div>
+			<div class="rations-popup__text">
+				<p class="rations-popup__title">Для взрослых собак</p>
+				<p class="rations-popup__subtitle">Индейка/Говядина</p>
+				<div class="rations-popup__wrap">
+					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и
+						Омега-3.</p>
+					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%),
+						кости
+						кролика (10%), печень баранины (5%), почки бараньи (2,5%),
+						рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
+						конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
+						конопляное масло.</p>
+					<p class="rations-popup__energy"><span>Пищевая ценность на 100г:</span> 174.9 ккал,
+						белки 16.45, жиры 11.9, углеводы 0.60</p>
+					<p class="rations-popup__weight">500г/300г/100г</p>
+					<button class="rations-popup__button button">Заказать</button>
+				</div>
+				<div class="rations-popup__form popup-form">
+					<input type="text" name="popup-form__name1" id="popup-form__name1" placeholder="Имя"
+						class="popup-form__name">
+					<input type="tel" name="popup-form__tel1" id="popup-form__tel1" placeholder="Телефон"
+						class="popup-form__tel">
+					<input type="text" name="popup-form__address1" id="popup-form__address1" placeholder="Адрес"
+						class="popup-form__address">
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__weight1" id="popup-form__weight1" class="popup-form__weight"
+							readonly placeholder="Выберите объем">
+						<img src="/img/icons/input-arrow.png" class="popup-form__input-arrow">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__quantity1" id="popup-form__quantity1"
+							class="popup-form__quantity" readonly placeholder="1">
+						<span class="plus"></span>
+						<span class="minus"></span>
+					</div>
+					<div class="popup-form__checkbox">
+						<input type="checkbox" name="popup-checkbox1" id="popup-checkbox1" class="popup-checkbox">
+						<div class="popup-form__checkbox-fake"></div>
+						<label for="popup-checkbox1" class="popup-form__checkbox-label">Даю согласие на обработку персональных
+							данных</label>
+					</div>
+					<div class="popup-form__buy">
+						<p>828₽</p>
+						<input type="button" value="Оформить заказ" class="button">
+					</div>
+				</div>
+			</div>
+			<div class="rations-popup__sent sent">
+				<h2 class="sent__title title">Спасибо!</h2>
+				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
+				Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у оператора.</p>
+			</div>
+		</div>
+	</div>
+	<div class="rations-popup-2 rations-popup" id="rations-popup-2">
+		<a href="#header" class="rations-popup__area"></a>
+		<div class="rations-popup__body">
+			<a href="#header" class="rations-popup__close"></a>
+			<div class="rations-popup__slider">
+				<img src="/img/r2.png" alt="рацион 1" class="rations-popup__main-slide">
+				<div class="rations-popup__slider-galary">
+					<img src="/img/prev1.png" alt=" ">
+					<img src="/img/prev2.png" alt=" ">
+					<img src="/img/prev3.png" alt=" ">
+				</div>
+			</div>
+			<div class="rations-popup__text">
+				<p class="rations-popup__title">Для щенков</p>
+				<p class="rations-popup__subtitle">Индейка/Говядина</p>
+				<div class="rations-popup__wrap">
+					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и
+						Омега-3.</p>
+					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%),
+						кости
+						кролика (10%), печень баранины (5%), почки бараньи (2,5%),
+						рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
+						конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
+						конопляное масло.</p>
+					<p class="rations-popup__energy"><span>Пищевая ценность на 100г:</span> 174.9 ккал,
+						белки 16.45, жиры 11.9, углеводы 0.60</p>
+					<p class="rations-popup__weight">500г/300г/100г</p>
+					<button class="rations-popup__button button">Заказать</button>
+				</div>
+				<div class="rations-popup__form popup-form">
+					<input type="text" name="popup-form__name2" id="popup-form__name2" placeholder="Имя"
+						class="popup-form__name">
+					<input type="tel" name="popup-form__tel2" id="popup-form__tel2" placeholder="Телефон"
+						class="popup-form__tel">
+					<input type="text" name="popup-form__address2" id="popup-form__address2" placeholder="Адрес"
+						class="popup-form__address">
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__weight2" id="popup-form__weight2" class="popup-form__weight"
+							readonly placeholder="Выберите объем">
+						<img src="/img/icons/input-arrow.png" class="popup-form__input-arrow">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__quantity2" id="popup-form__quantity2"
+							class="popup-form__quantity" readonly placeholder="1">
+						<span class="plus"></span>
+						<span class="minus"></span>
+					</div>
+					<div class="popup-form__checkbox">
+						<input type="checkbox" name="popup-checkbox2" id="popup-checkbox2" class="popup-checkbox">
+						<div class="popup-form__checkbox-fake"></div>
+						<label for="popup-checkbox2" class="popup-form__checkbox-label">Даю согласие на обработку персональных
+							данных</label>
+					</div>
+					<div class="popup-form__buy">
+						<p>828₽</p>
+						<input type="button" value="Оформить заказ" class="button">
+					</div>
+				</div>
+			</div>
+			<div class="rations-popup__sent sent">
+				<h2 class="sent__title title">Спасибо!</h2>
+				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
+					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у
+					оператора.</p>
+			</div>
+		</div>
+	</div>
+	<div class="rations-popup-3 rations-popup" id="rations-popup-3">
+		<a href="#header" class="rations-popup__area"></a>
+		<div class="rations-popup__body">
+			<a href="#header" class="rations-popup__close"></a>
+			<div class="rations-popup__slider">
+				<img src="/img/r3.png" alt="рацион 1" class="rations-popup__main-slide">
+				<div class="rations-popup__slider-galary">
+					<img src="/img/prev1.png" alt=" ">
+					<img src="/img/prev2.png" alt=" ">
+					<img src="/img/prev3.png" alt=" ">
+				</div>
+			</div>
+			<div class="rations-popup__text">
+				<p class="rations-popup__title">Для взрослых собак</p>
+				<p class="rations-popup__subtitle">Баранина/Кролик</p>
+				<div class="rations-popup__wrap">
+					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%), кости
+						кролика (10%), печень баранины (5%), почки бараньи (2,5%),
+						рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
+						конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
+						конопляное масло.</p>
+					<p class="rations-popup__energy"><span>Пищевая ценность на 100г:</span> 174.9 ккал,
+						белки 16.45, жиры 11.9, углеводы 0.60</p>
+					<p class="rations-popup__weight">500г/300г/100г</p>
+					<button class="rations-popup__button button">Заказать</button>
+				</div>
+				<div class="rations-popup__form popup-form">
+					<input type="text" name="popup-form__name3" id="popup-form__name3" placeholder="Имя" class="popup-form__name">
+					<input type="tel" name="popup-form__tel3" id="popup-form__tel3" placeholder="Телефон" class="popup-form__tel">
+					<input type="text" name="popup-form__address3" id="popup-form__address3" placeholder="Адрес"
+						class="popup-form__address">
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__weight3" id="popup-form__weight3" class="popup-form__weight" readonly
+							placeholder="Выберите объем">
+						<img src="/img/icons/input-arrow.png" class="popup-form__input-arrow">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__quantity3" id="popup-form__quantity3" class="popup-form__quantity" readonly
+							placeholder="1">
+						<span class="plus"></span>
+						<span class="minus"></span>
+					</div>
+					<div class="popup-form__checkbox">
+						<input type="checkbox" name="popup-checkbox3" id="popup-checkbox3" class="popup-checkbox">
+						<div class="popup-form__checkbox-fake"></div>
+						<label for="popup-checkbox3" class="popup-form__checkbox-label">Даю согласие на обработку персональных
+							данных</label>
+					</div>
+					<div class="popup-form__buy">
+						<p>828₽</p>
+						<input type="button" value="Оформить заказ" class="button">
+					</div>
+				</div>
+			</div>
+			<div class="rations-popup__sent sent">
+				<h2 class="sent__title title">Спасибо!</h2>
+				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
+					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у
+					оператора.</p>
+			</div>
+		</div>
+	</div>
+	<div class="rations-popup-4 rations-popup" id="rations-popup-4">
+		<a href="#header" class="rations-popup__area"></a>
+		<div class="rations-popup__body">
+			<a href="#header" class="rations-popup__close"></a>
+			<div class="rations-popup__slider">
+				<img src="/img/r4.png" alt="рацион 1" class="rations-popup__main-slide">
+				<div class="rations-popup__slider-galary">
+					<img src="/img/prev1.png" alt=" ">
+					<img src="/img/prev2.png" alt=" ">
+					<img src="/img/prev3.png" alt=" ">
+				</div>
+			</div>
+			<div class="rations-popup__text">
+				<p class="rations-popup__title">Для щенков</p>
+				<p class="rations-popup__subtitle">Баранина/Кролик</p>
+				<div class="rations-popup__wrap">
+					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%), кости
+						кролика (10%), печень баранины (5%), почки бараньи (2,5%),
+						рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
+						конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
+						конопляное масло.</p>
+					<p class="rations-popup__energy"><span>Пищевая ценность на 100г:</span> 174.9 ккал,
+						белки 16.45, жиры 11.9, углеводы 0.60</p>
+					<p class="rations-popup__weight">500г/300г/100г</p>
+					<button class="rations-popup__button button">Заказать</button>
+				</div>
+				<div class="rations-popup__form popup-form">
+					<input type="text" name="popup-form__name4" id="popup-form__name4" placeholder="Имя" class="popup-form__name">
+					<input type="tel" name="popup-form__tel4" id="popup-form__tel4" placeholder="Телефон" class="popup-form__tel">
+					<input type="text" name="popup-form__address4" id="popup-form__address4" placeholder="Адрес"
+						class="popup-form__address">
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__weight4" id="popup-form__weight4" class="popup-form__weight" readonly
+							placeholder="Выберите объем">
+						<img src="/img/icons/input-arrow.png" class="popup-form__input-arrow">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input type="text" name="popup-form__quantity4" id="popup-form__quantity4" class="popup-form__quantity" readonly
+							placeholder="1">
+						<span class="plus"></span>
+						<span class="minus"></span>
+					</div>
+					<div class="popup-form__checkbox">
+						<input type="checkbox" name="popup-checkbox4" id="popup-checkbox4" class="popup-checkbox">
+						<div class="popup-form__checkbox-fake"></div>
+						<label for="popup-checkbox4" class="popup-form__checkbox-label">Даю согласие на обработку персональных
+							данных</label>
+					</div>
+					<div class="popup-form__buy">
+						<p>828₽</p>
+						<input type="button" value="Оформить заказ" class="button">
+					</div>
+				</div>
+			</div>
+			<div class="rations-popup__sent sent">
+				<h2 class="sent__title title">Спасибо!</h2>
+				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
+					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у
+					оператора.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-popup">
+		<div class="footer-popup__area"></div>
+		<div class="footer-popup__body">
+			<div class="footer-popup__close"></div>
+			<h2 class="footer-popup__title title">Спасибо!</h2>
+			<p class="footer-popup__text">Мы ответим вам в ближайшее время.</p>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
