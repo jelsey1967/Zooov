@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap"
+		rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://unpkg.com/vue@next"></script>
@@ -17,7 +19,7 @@
 	<title>Zooov</title>
 </head>
 
-<body id="app">
+<body>
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header__body body">
@@ -30,7 +32,11 @@
 					<a href="#delivery">Доставка</a>
 					<a href="#faq">FAQ</a>
 					<a href="#contact">Контакты</a>
+					<a href="#rations" class="button">Выбрать рацион</a>
 				</nav>
+				<div class="header__burger">
+					<span></span>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -116,41 +122,49 @@
 						вашего друга. ZOOOV заботится о каждой собаке.</p>
 				</div>
 				<div class="rations__cards rations-cards">
-					<div class="rations-cards__item">
-						<img src="/img/r1.png" alt="Для взрослых собак" class="rations-cards__image">
-						<p class="rations-cards__title">Для взрослых собак</p>
-						<p class="rations-cards__subtitle">Индейка/Говядина</p>
-						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-							Омега-3.</p>
-						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-						<a href="#rations-popup-1" class="rations-cards__button button">Заказать</a>
+					<div class="rations-cards__slider">
+						<div class="rations-cards__item active">
+							<img src="/img/r1.png" alt="Для взрослых собак" class="rations-cards__image">
+							<p class="rations-cards__title">Для взрослых собак</p>
+							<p class="rations-cards__subtitle">Индейка/Говядина</p>
+							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+								Омега-3.</p>
+							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+							<a href="#rations-popup-1" class="rations-cards__button button">Заказать</a>
+						</div>
+						<div class="rations-cards__item">
+							<img src="/img/r2.png" alt="Для щенков" class="rations-cards__image">
+							<p class="rations-cards__title">Для щенков</p>
+							<p class="rations-cards__subtitle">Индейка/Говядина</p>
+							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+								Омега-3.</p>
+							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+							<a href="#rations-popup-2" class="rations-cards__button button">Заказать</a>
+						</div>
+						<div class="rations-cards__item">
+							<img src="/img/r3.png" alt="Для взрослых собак" class="rations-cards__image">
+							<p class="rations-cards__title">Для взрослых собак</p>
+							<p class="rations-cards__subtitle">Баранина/Кролик</p>
+							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+								Омега-3.</p>
+							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+							<a href="#rations-popup-3" class="rations-cards__button button">Заказать</a>
+						</div>
+						<div class="rations-cards__item">
+							<img src="/img/r4.png" alt="Для щенков" class="rations-cards__image">
+							<p class="rations-cards__title">Для щенков</p>
+							<p class="rations-cards__subtitle">Баранина/Кролик</p>
+							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+								Омега-3.</p>
+							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+							<a href="#rations-popup-4" class="rations-cards__button button">Заказать</a>
+						</div>
 					</div>
-					<div class="rations-cards__item">
-						<img src="/img/r2.png" alt="Для щенков" class="rations-cards__image">
-						<p class="rations-cards__title">Для щенков</p>
-						<p class="rations-cards__subtitle">Индейка/Говядина</p>
-						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-							Омега-3.</p>
-						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-						<a href="#rations-popup-2" class="rations-cards__button button">Заказать</a>
-					</div>
-					<div class="rations-cards__item">
-						<img src="/img/r3.png" alt="Для взрослых собак" class="rations-cards__image">
-						<p class="rations-cards__title">Для взрослых собак</p>
-						<p class="rations-cards__subtitle">Баранина/Кролик</p>
-						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-							Омега-3.</p>
-						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-						<a href="#rations-popup-3" class="rations-cards__button button">Заказать</a>
-					</div>
-					<div class="rations-cards__item">
-						<img src="/img/r4.png" alt="Для щенков" class="rations-cards__image">
-						<p class="rations-cards__title">Для щенков</p>
-						<p class="rations-cards__subtitle">Баранина/Кролик</p>
-						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-							Омега-3.</p>
-						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-						<a href="#rations-popup-4" class="rations-cards__button button">Заказать</a>
+					<div class="rations-cards__controls">
+						<div class="rations-cards__control active"></div>
+						<div class="rations-cards__control"></div>
+						<div class="rations-cards__control"></div>
+						<div class="rations-cards__control"></div>
 					</div>
 				</div>
 				<div class="rations__calculation">
@@ -487,8 +501,9 @@
 			<div class="rations-popup__sent sent">
 				<h2 class="sent__title title">Спасибо!</h2>
 				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
-				Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
-				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у оператора.</p>
+					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это
+					сделать у оператора.</p>
 			</div>
 		</div>
 	</div>
@@ -555,7 +570,8 @@
 				<h2 class="sent__title title">Спасибо!</h2>
 				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
 					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
-				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это
+					сделать у
 					оператора.</p>
 			</div>
 		</div>
@@ -576,8 +592,10 @@
 				<p class="rations-popup__title">Для взрослых собак</p>
 				<p class="rations-popup__subtitle">Баранина/Кролик</p>
 				<div class="rations-popup__wrap">
-					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
-					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%), кости
+					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и
+						Омега-3.</p>
+					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%),
+						кости
 						кролика (10%), печень баранины (5%), почки бараньи (2,5%),
 						рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
 						конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
@@ -588,18 +606,20 @@
 					<button class="rations-popup__button button">Заказать</button>
 				</div>
 				<div class="rations-popup__form popup-form">
-					<input type="text" name="popup-form__name3" id="popup-form__name3" placeholder="Имя" class="popup-form__name">
-					<input type="tel" name="popup-form__tel3" id="popup-form__tel3" placeholder="Телефон" class="popup-form__tel">
+					<input type="text" name="popup-form__name3" id="popup-form__name3" placeholder="Имя"
+						class="popup-form__name">
+					<input type="tel" name="popup-form__tel3" id="popup-form__tel3" placeholder="Телефон"
+						class="popup-form__tel">
 					<input type="text" name="popup-form__address3" id="popup-form__address3" placeholder="Адрес"
 						class="popup-form__address">
 					<div class="popup-form__input-wrapper">
-						<input type="text" name="popup-form__weight3" id="popup-form__weight3" class="popup-form__weight" readonly
-							placeholder="Выберите объем">
+						<input type="text" name="popup-form__weight3" id="popup-form__weight3" class="popup-form__weight"
+							readonly placeholder="Выберите объем">
 						<img src="/img/icons/input-arrow.png" class="popup-form__input-arrow">
 					</div>
 					<div class="popup-form__input-wrapper">
-						<input type="text" name="popup-form__quantity3" id="popup-form__quantity3" class="popup-form__quantity" readonly
-							placeholder="1">
+						<input type="text" name="popup-form__quantity3" id="popup-form__quantity3"
+							class="popup-form__quantity" readonly placeholder="1">
 						<span class="plus"></span>
 						<span class="minus"></span>
 					</div>
@@ -619,7 +639,8 @@
 				<h2 class="sent__title title">Спасибо!</h2>
 				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
 					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
-				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это
+					сделать у
 					оператора.</p>
 			</div>
 		</div>
@@ -640,8 +661,10 @@
 				<p class="rations-popup__title">Для щенков</p>
 				<p class="rations-popup__subtitle">Баранина/Кролик</p>
 				<div class="rations-popup__wrap">
-					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
-					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%), кости
+					<p class="rations-popup__description">Подходит для ежедвеного кормления. Богат животными белками и
+						Омега-3.</p>
+					<p class="rations-popup__composition"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%),
+						кости
 						кролика (10%), печень баранины (5%), почки бараньи (2,5%),
 						рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
 						конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
@@ -652,18 +675,20 @@
 					<button class="rations-popup__button button">Заказать</button>
 				</div>
 				<div class="rations-popup__form popup-form">
-					<input type="text" name="popup-form__name4" id="popup-form__name4" placeholder="Имя" class="popup-form__name">
-					<input type="tel" name="popup-form__tel4" id="popup-form__tel4" placeholder="Телефон" class="popup-form__tel">
+					<input type="text" name="popup-form__name4" id="popup-form__name4" placeholder="Имя"
+						class="popup-form__name">
+					<input type="tel" name="popup-form__tel4" id="popup-form__tel4" placeholder="Телефон"
+						class="popup-form__tel">
 					<input type="text" name="popup-form__address4" id="popup-form__address4" placeholder="Адрес"
 						class="popup-form__address">
 					<div class="popup-form__input-wrapper">
-						<input type="text" name="popup-form__weight4" id="popup-form__weight4" class="popup-form__weight" readonly
-							placeholder="Выберите объем">
+						<input type="text" name="popup-form__weight4" id="popup-form__weight4" class="popup-form__weight"
+							readonly placeholder="Выберите объем">
 						<img src="/img/icons/input-arrow.png" class="popup-form__input-arrow">
 					</div>
 					<div class="popup-form__input-wrapper">
-						<input type="text" name="popup-form__quantity4" id="popup-form__quantity4" class="popup-form__quantity" readonly
-							placeholder="1">
+						<input type="text" name="popup-form__quantity4" id="popup-form__quantity4"
+							class="popup-form__quantity" readonly placeholder="1">
 						<span class="plus"></span>
 						<span class="minus"></span>
 					</div>
@@ -683,7 +708,8 @@
 				<h2 class="sent__title title">Спасибо!</h2>
 				<p class="sent__text">Ваш заказ оформлен и передан менеджеру.
 					Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
-				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у
+				<p class="sent__text">Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это
+					сделать у
 					оператора.</p>
 			</div>
 		</div>

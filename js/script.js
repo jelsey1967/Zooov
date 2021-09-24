@@ -1,13 +1,19 @@
-$(document).ready(function() {
-  $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
+$(document).ready(function () {
+	$(window).scroll(function () {
+		let scroll = $(window).scrollTop();
 
-    if (scroll >= 80) {
-      $(".header").addClass("scrolled");
-    } else {
-		$(".header").removeClass("scrolled");
-    }
-  });
+		if (scroll >= 80) {
+			$(".header").addClass("scrolled");
+		} else {
+			$(".header").removeClass("scrolled");
+		}
+	});
+
+	$('.header__burger').click(function (event) {
+		$('.header__burger,.header__nav').toggleClass('active');
+		$('body').toggleClass('lock');
+		$('.header').toggleClass('active');
+	});
 });
 
 let popupButton = $(".rations-popup__button");
@@ -29,7 +35,7 @@ for (let i = 0; i < popupButton.length; i++) {
 for (let i = 0; i < popupClose.length; i++) {
 	popupClose[i].addEventListener('click', function () {
 		setTimeout(
-			()=>{
+			() => {
 				popupForm[i].classList.remove("active");
 				popupText[i].classList.remove("notActive");
 				popupSent[i].classList.remove("active");
@@ -42,7 +48,7 @@ for (let i = 0; i < popupClose.length; i++) {
 for (let i = 0; i < popupArea.length; i++) {
 	popupArea[i].addEventListener('click', function () {
 		setTimeout(
-			()=>{
+			() => {
 				popupForm[i].classList.remove("active");
 				popupText[i].classList.remove("notActive");
 				popupSent[i].classList.remove("active");
@@ -59,18 +65,3 @@ for (let i = 0; i < popupBuyBtn.length; i++) {
 		popupTextBlock[i].classList.add("notActive");
 	}, false);
 }
-
-// const App = {
-// 	data() {
-// 		return {
-
-// 		}
-// 	},
-// 	mounted() {
-// 		showForm: {
-// 			console.log("xhopa");
-// 		}
-// 	}
-// }
-
-// Vue.createApp(App).mount('#app')
