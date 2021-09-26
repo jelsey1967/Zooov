@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 	$(window).scroll(function () {
 		let scroll = $(window).scrollTop();
 
@@ -14,8 +15,22 @@ $(document).ready(function () {
 		$('body').toggleClass('lock');
 		$('.header').toggleClass('active');
 	});
+
+	$('.faq__controls').click((e) => {
+		e.target.parentElement.classList.toggle('checked');
+	});
+
+	
+
+
+
+
+
 });
 
+
+
+// POPUPS
 let popupButton = $(".rations-popup__button");
 let popupForm = $(".rations-popup__form");
 let popupText = $(".rations-popup__wrap");
@@ -65,3 +80,4 @@ for (let i = 0; i < popupBuyBtn.length; i++) {
 		popupTextBlock[i].classList.add("notActive");
 	}, false);
 }
+// /POPUPS

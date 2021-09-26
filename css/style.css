@@ -86,6 +86,8 @@ section {
   height: calc(60px + 20 * ((100vw - 320px) / (1440 - 320)));
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  position: relative;
+  z-index: 13;
 }
 
 .header__nav {
@@ -159,6 +161,8 @@ section {
 .header__burger {
   display: none;
   cursor: pointer;
+  position: relative;
+  z-index: 13;
 }
 
 .header__burger.active::before {
@@ -187,10 +191,9 @@ section {
   }
   .header__burger {
     display: block;
-    position: relative;
     height: 20px;
     width: 30px;
-    z-index: 4;
+    z-index: 13;
   }
   .header__burger::before, .header__burger::after {
     content: "";
@@ -226,9 +229,9 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -256,7 +259,7 @@ section {
   .header__nav.active {
     top: calc(70px + 10 * ((100vw - 320px) / (1440 - 320)));
   }
-  .header__nav.active button {
+  .header__nav.active .button {
     display: block;
   }
 }
@@ -308,16 +311,22 @@ section {
   height: 210px;
   position: relative;
   z-index: 2;
-  background-image: url(/img/icons/Ellipse.png);
+  background-image: url(/img/icons/Ellipse_animated.svg);
   background-position-x: 75%;
   background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: calc(170px + 80 * ((100vw - 320px) / (1440 - 320)));
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .main__title {
     background-position-y: 50%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main__title {
+    background-position-x: 80%;
   }
 }
 
@@ -365,6 +374,14 @@ section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .barf__body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 .barf__content {
@@ -416,17 +433,31 @@ section {
 }
 
 .barf__image {
-  width: calc(326px + 262 * ((100vw - 320px) / (1440 - 320)));
-  height: calc(290px + 233 * ((100vw - 320px) / (1440 - 320)));
+  width: calc(350px + 238 * ((100vw - 768px) / (1440 - 768)));
+  height: calc(311px + 212 * ((100vw - 768px) / (1440 - 768)));
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (max-width: 768px) {
+  .barf__image {
+    width: 100%;
+    height: auto;
+    margin: 40px 0 0 0;
+  }
 }
 
 .barf__nutrition {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+}
+
+@media (max-width: 768px) {
+  .barf__nutrition {
+    grid-column-end: 2;
+  }
 }
 
 .nutrition {
@@ -445,6 +476,12 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .nutrition {
+    margin-top: 0;
+  }
+}
+
 .nutrition__title {
   font-weight: 600;
   font-size: 14px;
@@ -454,7 +491,7 @@ section {
 }
 
 @media (max-width: 1115px) {
-  .nutrition__adult {
+  .nutrition__item--abult {
     margin-bottom: 40px;
   }
 }
@@ -517,13 +554,27 @@ section {
 }
 
 .rations__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1250px) {
+  .rations__cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .rations__cards {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    margin-left: -586px;
+  }
 }
 
 .rations__calculation {
@@ -584,30 +635,6 @@ section {
   }
   .rations-cards__item.active::before {
     opacity: 0;
-  }
-}
-
-.rations-cards__slider {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 1250px) {
-  .rations-cards__slider {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    grid-row-gap: 20px;
-  }
-}
-
-@media (max-width: 660px) {
-  .rations-cards__slider {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    margin-left: -586px;
   }
 }
 
@@ -917,6 +944,7 @@ section {
 
 .faq__list {
   width: 766px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -943,7 +971,7 @@ section {
 }
 
 .faq__item.checked {
-  padding: 0 0 32px 0;
+  padding: 32px 0 32px 0;
 }
 
 .faq__item.checked .faq__answer {
@@ -983,6 +1011,7 @@ section {
   height: 20px;
   position: relative;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .faq__controls::before {
@@ -1013,7 +1042,7 @@ section {
   margin-top: 180px;
   background-image: url(/img/bg-footer.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 20% center;
   background-size: cover;
 }
 

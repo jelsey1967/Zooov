@@ -9,17 +9,15 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://unpkg.com/vue@next"></script>
 
 	<title>Zooov</title>
 </head>
 
 <body>
+
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header__body body">
@@ -72,7 +70,7 @@
 				</div>
 				<img src="/img/Rectangle1.png" alt="Питание для собак" class="barf__image">
 				<div class="barf__nutrition nutrition">
-					<div class="nutrition__adult">
+					<div class="nutrition__item nutrition__item--adult">
 						<p class="nutrition__title">Для взрослых</p>
 						<ul class="nutrition__list">
 							<div>
@@ -88,7 +86,7 @@
 							</div>
 						</ul>
 					</div>
-					<div class="nutrition__puppies">
+					<div class="nutrition__item nutrition__item--puppies">
 						<p class="nutrition__title">Для щенков</p>
 						<ul class="nutrition__list">
 							<div>
@@ -121,44 +119,43 @@
 						предпочтений
 						вашего друга. ZOOOV заботится о каждой собаке.</p>
 				</div>
+
 				<div class="rations__cards rations-cards">
-					<div class="rations-cards__slider">
-						<div class="rations-cards__item active">
-							<img src="/img/r1.png" alt="Для взрослых собак" class="rations-cards__image">
-							<p class="rations-cards__title">Для взрослых собак</p>
-							<p class="rations-cards__subtitle">Индейка/Говядина</p>
-							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-								Омега-3.</p>
-							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-							<a href="#rations-popup-1" class="rations-cards__button button">Заказать</a>
-						</div>
-						<div class="rations-cards__item">
-							<img src="/img/r2.png" alt="Для щенков" class="rations-cards__image">
-							<p class="rations-cards__title">Для щенков</p>
-							<p class="rations-cards__subtitle">Индейка/Говядина</p>
-							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-								Омега-3.</p>
-							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-							<a href="#rations-popup-2" class="rations-cards__button button">Заказать</a>
-						</div>
-						<div class="rations-cards__item">
-							<img src="/img/r3.png" alt="Для взрослых собак" class="rations-cards__image">
-							<p class="rations-cards__title">Для взрослых собак</p>
-							<p class="rations-cards__subtitle">Баранина/Кролик</p>
-							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-								Омега-3.</p>
-							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-							<a href="#rations-popup-3" class="rations-cards__button button">Заказать</a>
-						</div>
-						<div class="rations-cards__item">
-							<img src="/img/r4.png" alt="Для щенков" class="rations-cards__image">
-							<p class="rations-cards__title">Для щенков</p>
-							<p class="rations-cards__subtitle">Баранина/Кролик</p>
-							<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
-								Омега-3.</p>
-							<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
-							<a href="#rations-popup-4" class="rations-cards__button button">Заказать</a>
-						</div>
+					<div class="rations-cards__item active">
+						<img src="/img/r1.png" alt="Для взрослых собак" class="rations-cards__image">
+						<p class="rations-cards__title">Для взрослых собак</p>
+						<p class="rations-cards__subtitle">Индейка/Говядина</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-1" class="rations-cards__button button">Заказать</a>
+					</div>
+					<div class="rations-cards__item">
+						<img src="/img/r2.png" alt="Для щенков" class="rations-cards__image">
+						<p class="rations-cards__title">Для щенков</p>
+						<p class="rations-cards__subtitle">Индейка/Говядина</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-2" class="rations-cards__button button">Заказать</a>
+					</div>
+					<div class="rations-cards__item">
+						<img src="/img/r3.png" alt="Для взрослых собак" class="rations-cards__image">
+						<p class="rations-cards__title">Для взрослых собак</p>
+						<p class="rations-cards__subtitle">Баранина/Кролик</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-3" class="rations-cards__button button">Заказать</a>
+					</div>
+					<div class="rations-cards__item">
+						<img src="/img/r4.png" alt="Для щенков" class="rations-cards__image">
+						<p class="rations-cards__title">Для щенков</p>
+						<p class="rations-cards__subtitle">Баранина/Кролик</p>
+						<p class="rations-cards__description">Подходит для ежедвеного кормления. Богат животными белками и
+							Омега-3.</p>
+						<p class="rations-cards__weight">700г / 500г / 300г / 150г / 100г</p>
+						<a href="#rations-popup-4" class="rations-cards__button button">Заказать</a>
 					</div>
 					<div class="rations-cards__controls">
 						<div class="rations-cards__control active"></div>
@@ -167,6 +164,8 @@
 						<div class="rations-cards__control"></div>
 					</div>
 				</div>
+
+
 				<div class="rations__calculation">
 					<p>Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
 					<a href="#popup2" class="button">Расчитать</a>
@@ -723,8 +722,6 @@
 			<p class="footer-popup__text">Мы ответим вам в ближайшее время.</p>
 		</div>
 	</div>
-
-
 
 
 	<script src="js/script.js"></script>
