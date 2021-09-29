@@ -16,10 +16,10 @@ $(document).ready(function () {
 		$('.header').toggleClass('active');
 	});
 
-	$('.header__nav a').click(function (event) {
-		$('.header__burger,.header__nav').toggleClass('active');
-		$('body').toggleClass('lock');
-		$('.header').toggleClass('active');
+	$('.header__nav a').click(function () {
+		$('.header__burger,.header__nav').removeClass('active');
+		$('body').removeClass('lock');
+		$('.header').removeClass('active');
 	});
 
 
