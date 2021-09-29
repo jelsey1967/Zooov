@@ -16,6 +16,13 @@ $(document).ready(function () {
 		$('.header').toggleClass('active');
 	});
 
+	$('.header__nav a').click(function (event) {
+		$('.header__burger,.header__nav').toggleClass('active');
+		$('body').toggleClass('lock');
+		$('.header').toggleClass('active');
+	});
+
+
 	$('.faq__controls').click((e) => {
 		e.target.parentElement.classList.toggle('checked');
 	});
