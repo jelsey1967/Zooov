@@ -827,7 +827,11 @@ section {
 
 	&__title {
 		margin-bottom: calc(24px + 16 * ((100vw - 320px) / (1440 - 320)));
-		width: calc(320px + 89 * ((100vw - 320px) / (1440 - 320)));
+		width: calc(315px + 94 * ((100vw - 320px) / (1440 - 320)));
+
+		@media (max-width: 370px){
+			width: 100%;
+		}
 	}
 
 	&__text {
@@ -1068,6 +1072,10 @@ section {
 				text-decoration: underline;
 				color: #fff;
 			}
+
+			@media (max-width: 370px){
+				width: 100%;
+			}
 		}
 
 		@media (max-width: 1120px) {
@@ -1136,23 +1144,32 @@ section {
 
 	&__copyright {
 		width: 100%;
-		height: calc(165px - 90 * ((100vw - 320px) / (1440 - 320)));
+		padding: 30px 0;
 		background-color: #69120e;
 
-		p {
+		p, a {
 			font-family: $Montserrat;
 			font-weight: 400;
 			font-size: 12px;
 			color: rgba(255, 255, 255, 0.4);
+		}
 
+		p{
 			@media (max-width: 1150px) {
-				&:nth-child(1) {
-					margin-bottom: 24px;
-				}
-				&:nth-child(2) {
+				margin-bottom: 24px;
+			}
+		}
+
+		a{
+			@media (max-width: 1150px) {
+				&:first-of-type{
 					margin-bottom: 8px;
 				}
 			}
+		}
+
+		@media (max-width: 1150px) {
+			padding: 24px 0;
 		}
 	}
 
@@ -1242,37 +1259,35 @@ section {
 
 	&__checkbox {
 		opacity: 0;
-	}
-
-	&__fake-checkbox {
+		visibility: hidden;
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 16px;
+	}
+
+	&__fake-checkbox {
+		min-width: 16px;
 		height: 16px;
 		background-color: #fff;
 		border-radius: 2px;
-		z-index: 9;
-
-		&.checked {
-			background-image: url("../img/icons/check.svg");
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		margin-right: 8px;
+		cursor: pointer;
 	}
 
-	&__checkbox-block {
-		display: flex;
-		position: relative;
+	&__checkbox:checked + &__fake-checkbox{
+		background-image: url("../img/icons/check.svg");
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	&__checkbox-label {
-		padding-left: 11px;
+		display: flex;
+		position: relative;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 140%;
 		color: #fff;
-		width: 190px;
+		width: 215px;
 		cursor: pointer;
 
 		@media (max-width: 680px) {

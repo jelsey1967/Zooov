@@ -964,7 +964,13 @@ section {
 
 .about__title {
   margin-bottom: calc(24px + 16 * ((100vw - 320px) / (1440 - 320)));
-  width: calc(320px + 89 * ((100vw - 320px) / (1440 - 320)));
+  width: calc(315px + 94 * ((100vw - 320px) / (1440 - 320)));
+}
+
+@media (max-width: 370px) {
+  .about__title {
+    width: 100%;
+  }
 }
 
 .about__text {
@@ -1256,6 +1262,12 @@ section {
   color: #fff;
 }
 
+@media (max-width: 370px) {
+  .footer__contact p:not(.footer__phone) {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1120px) {
   .footer__contact {
     margin-bottom: 56px;
@@ -1326,11 +1338,11 @@ section {
 
 .footer__copyright {
   width: 100%;
-  height: calc(165px - 90 * ((100vw - 320px) / (1440 - 320)));
+  padding: 30px 0;
   background-color: #69120e;
 }
 
-.footer__copyright p {
+.footer__copyright p, .footer__copyright a {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1338,11 +1350,20 @@ section {
 }
 
 @media (max-width: 1150px) {
-  .footer__copyright p:nth-child(1) {
+  .footer__copyright p {
     margin-bottom: 24px;
   }
-  .footer__copyright p:nth-child(2) {
+}
+
+@media (max-width: 1150px) {
+  .footer__copyright a:first-of-type {
     margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .footer__copyright {
+    padding: 24px 0;
   }
 }
 
@@ -1477,39 +1498,37 @@ section {
 
 .form__checkbox {
   opacity: 0;
-}
-
-.form__fake-checkbox {
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  width: 16px;
+}
+
+.form__fake-checkbox {
+  min-width: 16px;
   height: 16px;
   background-color: #fff;
   border-radius: 2px;
-  z-index: 9;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
-.form__fake-checkbox.checked {
+.form__checkbox:checked + .form__fake-checkbox {
   background-image: url("../img/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.form__checkbox-block {
+.form__checkbox-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-}
-
-.form__checkbox-label {
-  padding-left: 11px;
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
   color: #fff;
-  width: 190px;
+  width: 215px;
   cursor: pointer;
 }
 
