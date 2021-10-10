@@ -10,6 +10,10 @@ $(document).ready(function () {
 		}
 	});
 
+	if (window.pageYOffset > 80) {
+		$(".header").addClass("scrolled");
+	};
+
 	$('.header__burger').click(function (event) {
 		$('.header__burger,.header__nav').toggleClass('active');
 		$('body').toggleClass('lock');
@@ -27,10 +31,11 @@ $(document).ready(function () {
 		e.target.parentElement.classList.toggle('checked');
 	});
 
-	
-
-
-
+	$('.controls__item--right').click(() => {
+		$('.nutrition__item--puppies').css("rigth" , ()=>{
+			return ($('.nutrition').width() - 230) / 2;
+		});
+	});
 
 
 });

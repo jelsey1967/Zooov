@@ -484,19 +484,28 @@ section {
   padding: 32px 80px;
   margin-top: 80px;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .nutrition {
     margin-top: 0;
+    padding: 56px 49px 72px 49px;
+  }
+}
+
+@media (max-width: 630px) {
+  .nutrition {
+    height: 487px;
+    overflow: hidden;
+    background-image: url("../img/icons/vertical-bg.svg");
   }
 }
 
 @media (max-width: 1120px) {
   .nutrition {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -514,9 +523,15 @@ section {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   .nutrition__item {
-    display: none;
+    width: 230px;
+    position: absolute;
+  }
+  .nutrition__item--puppies {
+    height: auto;
+    top: 56px;
+    right: -100%;
   }
 }
 
@@ -559,6 +574,42 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.controls {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  width: 24px;
+  height: 8px;
+  margin-left: -24px;
+}
+
+@media (max-width: 630px) {
+  .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.controls__item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #961914;
+}
+
+.controls__item.active {
+  background-color: #961914;
+}
+
+.controls__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .rations__title-block {
@@ -1342,7 +1393,8 @@ section {
   background-color: #69120e;
 }
 
-.footer__copyright p, .footer__copyright a {
+.footer__copyright p,
+.footer__copyright a {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
