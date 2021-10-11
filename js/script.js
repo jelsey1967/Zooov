@@ -31,9 +31,12 @@ $(document).ready(function () {
 		e.target.parentElement.classList.toggle('checked');
 	});
 
+	console.log($('.faq__answer').scrollHeight());
+
 	$('.controls__item--right').click(() => {
 		$('.nutrition__item--puppies').css("rigth" , ()=>{
 			return ($('.nutrition').width() - 230) / 2;
+			
 		});
 	});
 
@@ -49,7 +52,7 @@ $(document).ready(function () {
 	// 		console.log(card);
 	// 	}
 	// }
-	console.log($('.rations').offset().left);
+	// console.log($('.rations').offset().left);
 
 });
 

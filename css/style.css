@@ -1167,8 +1167,9 @@ section {
 }
 
 .faq__item.checked .faq__answer {
-  display: block;
   opacity: 1;
+  padding: 21px 0 32px 0;
+  max-height: none;
 }
 
 .faq__item.checked .faq__controls::after {
@@ -1191,9 +1192,9 @@ section {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  padding: 21px 0 32px 0;
-  display: none;
   opacity: 0;
+  overflow: hidden;
+  max-height: 0px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
