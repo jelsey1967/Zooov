@@ -37,6 +37,19 @@ $(document).ready(function () {
 		});
 	});
 
+	// let cards = $('.rations-cards__item');
+	
+	// for (let i = 0; i < cards.length; i++){
+
+	// 	let card = cards[i];
+
+
+	// 	if (card.offset() < 0) {
+	// 		card.addClass('hidden');
+	// 		console.log(card);
+	// 	}
+	// }
+	console.log($('.rations').offset().left);
 
 });
 
