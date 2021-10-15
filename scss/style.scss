@@ -426,16 +426,16 @@ section {
 	background-position: center;
 	font-family: $Montserrat;
 
-	@media (max-width: 770px){
+	@media (max-width: 770px) {
 		padding: 56px 49px 0 49px;
 	}
 
-	@media (max-width: 360px){
+	@media (max-width: 360px) {
 		padding: 56px 19px 0 19px;
 	}
 
-	&__swiper{
-		@media (max-width: 770px){
+	&__swiper {
+		@media (max-width: 770px) {
 			padding-bottom: 72px;
 		}
 	}
@@ -446,29 +446,28 @@ section {
 		&:last-child {
 			justify-content: end;
 
-			@media (max-width: 1030px){
+			@media (max-width: 1030px) {
 				justify-content: center;
 			}
 		}
 
-		@media (max-width: 1030px){
+		@media (max-width: 1030px) {
 			justify-content: center;
 		}
 	}
 
-	.swiper-pagination-bullet{
+	.swiper-pagination-bullet {
 		border: 1px solid $red;
 		background-color: transparent;
 		opacity: 1;
 	}
 
-	.swiper-pagination-bullet-active{
+	.swiper-pagination-bullet-active {
 		background-color: $red;
-	}	
+	}
 }
 
 .barf-slide {
-
 	&__title {
 		font-weight: 600;
 		font-size: 14px;
@@ -480,11 +479,11 @@ section {
 	div + div {
 		margin-left: 70px;
 
-		@media (max-width: 1120px){
+		@media (max-width: 1120px) {
 			margin-left: 30px;
 		}
 
-		@media (max-width: 1030px){
+		@media (max-width: 1030px) {
 			margin: 26px 0 0 0;
 		}
 	}
@@ -495,10 +494,10 @@ section {
 		margin-right: 16px;
 	}
 
-	&__list{
+	&__list {
 		display: flex;
 
-		@media (max-width: 1030px){
+		@media (max-width: 1030px) {
 			flex-direction: column;
 		}
 	}
@@ -565,6 +564,11 @@ section {
 		background-repeat: no-repeat;
 		background-position-x: 75%;
 		background-position-y: top;
+
+		@media (max-width: 550px) {
+			width: 320px;
+			background-position-x: 100%;
+		}
 	}
 
 	&__descroption {
@@ -641,41 +645,23 @@ section {
 	}
 }
 
-.rations-cards {
+.rations-slider {
+	min-width: 0;
+	padding-bottom: 48px;
+
+	&__slide {
+		width: 280px;
+	}
+
 	&__item {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		width: 280px;
 		font-family: $Montserrat;
 		position: relative;
 
 		&:not(:last-child) {
 			margin-right: 26px;
-		}
-
-		&.hidden {
-			opacity: 0.5;
-		}
-	}
-
-	&__controls {
-		display: none;
-	}
-
-	&__control {
-		width: 10px;
-		height: 10px;
-		background-color: #961814;
-		opacity: 0.2;
-		border-radius: 50%;
-
-		&.active {
-			opacity: 1;
-		}
-
-		&:not(:last-child) {
-			margin-right: 10px;
 		}
 	}
 
@@ -723,6 +709,14 @@ section {
 			background-color: $pink;
 			border: 1px solid transparent;
 		}
+	}
+
+	.swiper-pagination-bullet {
+		background-color: $red;
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: $red;
 	}
 }
 

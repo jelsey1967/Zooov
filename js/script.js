@@ -29,23 +29,6 @@ $(document).ready(function () {
 	$('.faq__controls').click((e) => {
 		e.target.parentElement.classList.toggle('checked');
 	});
-
-	$.each($('.rations-cards__item') ,(inx, elem) => {
-		if (($(window).width() - $(elem).offset().left - $(elem).width()) < 0){
-			$(elem).addClass('hidden');
-		}
-	});
-
-	$.each($('.rations__dots-item'), (inx, elem) => {
-		let inxx = inx;
-
-		$(elem).click((e)=>{
-			let arr = $('.rations-cards__item');
-			arr[inxx]
-			console.log(e);
-		});
-	});
-
 });
 
 
@@ -105,7 +88,7 @@ for (let i = 0; i < popupBuyBtn.length; i++) {
 
 
 
-const swiper = new Swiper('.barf-slider__swiper', {
+const barfSlider = new Swiper('.barf-slider__swiper', {
 	pagination: {
 		el: '.barf-slider__pagination',
 		clickable: true,
@@ -121,7 +104,18 @@ const swiper = new Swiper('.barf-slider__swiper', {
 		},
 	},
 
-	simulateTouch: false,
 	autoHeight: true,
 	slidesPerView: 2,
+});
+
+const rationsSlider = new Swiper('.rations-slider', {
+	pagination: {
+		el: '.rations-slider__pagination',
+		clickable: true,
+	},
+	
+	autoHeight: true,
+	spaceBetween: 24,
+	slidesPerView: 'auto',
+	loopedSlides: true,
 });

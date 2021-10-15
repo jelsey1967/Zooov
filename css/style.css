@@ -665,6 +665,13 @@ section {
   background-position-y: top;
 }
 
+@media (max-width: 550px) {
+  .rations__title {
+    width: 320px;
+    background-position-x: 100%;
+  }
+}
+
 .rations__descroption {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -763,7 +770,16 @@ section {
   }
 }
 
-.rations-cards__item {
+.rations-slider {
+  min-width: 0;
+  padding-bottom: 48px;
+}
+
+.rations-slider__slide {
+  width: 280px;
+}
+
+.rations-slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,59 +790,34 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 280px;
   font-family: "Montserrat", sans-serif;
   position: relative;
 }
 
-.rations-cards__item:not(:last-child) {
+.rations-slider__item:not(:last-child) {
   margin-right: 26px;
 }
 
-.rations-cards__item.hidden {
-  opacity: 0.5;
-}
-
-.rations-cards__controls {
-  display: none;
-}
-
-.rations-cards__control {
-  width: 10px;
-  height: 10px;
-  background-color: #961814;
-  opacity: 0.2;
-  border-radius: 50%;
-}
-
-.rations-cards__control.active {
-  opacity: 1;
-}
-
-.rations-cards__control:not(:last-child) {
-  margin-right: 10px;
-}
-
-.rations-cards__image {
+.rations-slider__image {
   width: 100%;
   height: auto;
 }
 
-.rations-cards__title {
+.rations-slider__title {
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
   margin-top: 45px;
 }
 
-.rations-cards__subtitle {
+.rations-slider__subtitle {
   font-weight: 400;
   font-size: 13px;
   color: #9f9e9d;
   margin: 4px 0 16px 0;
 }
 
-.rations-cards__description {
+.rations-slider__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -834,13 +825,13 @@ section {
   margin-bottom: 11px;
 }
 
-.rations-cards__weight {
+.rations-slider__weight {
   color: #9f9e9d;
   font-size: 13px;
   margin-bottom: 24px;
 }
 
-.rations-cards__button {
+.rations-slider__button {
   border: 1px solid #961914;
   background-color: #fff;
   color: #961914;
@@ -849,9 +840,17 @@ section {
   transition: all 0.2s;
 }
 
-.rations-cards__button:hover {
+.rations-slider__button:hover {
   background-color: #ead1d0;
   border: 1px solid transparent;
+}
+
+.rations-slider .swiper-pagination-bullet {
+  background-color: #961914;
+}
+
+.rations-slider .swiper-pagination-bullet-active {
+  background-color: #961914;
 }
 
 .zooov__title {
