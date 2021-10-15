@@ -487,7 +487,19 @@ section {
 
 @media (max-width: 770px) {
   .barf-slider {
-    padding: 56px 49px 72px 49px;
+    padding: 56px 49px 0 49px;
+  }
+}
+
+@media (max-width: 360px) {
+  .barf-slider {
+    padding: 56px 19px 0 19px;
+  }
+}
+
+@media (max-width: 770px) {
+  .barf-slider__swiper {
+    padding-bottom: 72px;
   }
 }
 

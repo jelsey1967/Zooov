@@ -105,7 +105,7 @@ for (let i = 0; i < popupBuyBtn.length; i++) {
 
 
 
-const swiper = new Swiper('.barf-slider', {
+const swiper = new Swiper('.barf-slider__swiper', {
 	pagination: {
 		el: '.barf-slider__pagination',
 		clickable: true,

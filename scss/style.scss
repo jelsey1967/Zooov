@@ -427,7 +427,17 @@ section {
 	font-family: $Montserrat;
 
 	@media (max-width: 770px){
-		padding: 56px 49px 72px 49px;
+		padding: 56px 49px 0 49px;
+	}
+
+	@media (max-width: 360px){
+		padding: 56px 19px 0 19px;
+	}
+
+	&__swiper{
+		@media (max-width: 770px){
+			padding-bottom: 72px;
+		}
 	}
 
 	&__slide {
