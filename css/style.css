@@ -470,47 +470,66 @@ section {
   }
 }
 
-.nutrition {
+.barf-slider {
+  min-width: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 32px 80px;
+  margin-top: 80px;
   background-color: #ead1d0;
   background-image: url("../img/icons/line.png");
   background-repeat: no-repeat;
   background-position: center;
-  padding: 32px 80px;
-  margin-top: 80px;
   font-family: "Montserrat", sans-serif;
-  position: relative;
 }
 
-@media (max-width: 768px) {
-  .nutrition {
-    margin-top: 0;
+@media (max-width: 770px) {
+  .barf-slider {
     padding: 56px 49px 72px 49px;
   }
 }
 
-@media (max-width: 630px) {
-  .nutrition {
-    height: 487px;
-    overflow: hidden;
-    background-image: url("../img/icons/vertical-bg.svg");
+.barf-slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.barf-slider__slide:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 1030px) {
+  .barf-slider__slide:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-@media (max-width: 1120px) {
-  .nutrition {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+@media (max-width: 1030px) {
+  .barf-slider__slide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-.nutrition__title {
+.barf-slider .swiper-pagination-bullet {
+  border: 1px solid #961914;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.barf-slider .swiper-pagination-bullet-active {
+  background-color: #961914;
+}
+
+.barf-slide__title {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -518,63 +537,51 @@ section {
   margin-bottom: 16px;
 }
 
-@media (max-width: 1120px) {
-  .nutrition__item--adult {
-    margin: 0 50px 40px 0;
-  }
-}
-
-@media (max-width: 630px) {
-  .nutrition__item {
-    width: 230px;
-    position: absolute;
-  }
-  .nutrition__item--puppies {
-    height: auto;
-    top: 56px;
-    right: -100%;
-  }
-}
-
-.nutrition__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nutrition__list div + div {
+.barf-slide div + div {
   margin-left: 70px;
 }
 
 @media (max-width: 1120px) {
-  .nutrition__list div + div {
+  .barf-slide div + div {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .barf-slide div + div {
     margin: 26px 0 0 0;
   }
 }
 
-.nutrition__list img {
+.barf-slide img {
   width: 20px;
   height: auto;
   margin-right: 16px;
 }
 
-.nutrition__list li {
-  font-weight: 500;
-  font-size: 18px;
-  color: #434242;
+.barf-slide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.nutrition__list li:not(:last-child) {
-  margin-bottom: 26px;
-}
-
-@media (max-width: 1120px) {
-  .nutrition__list {
+@media (max-width: 1030px) {
+  .barf-slide__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.barf-slide li {
+  font-weight: 500;
+  font-size: 18px;
+  color: #434242;
+}
+
+.barf-slide li:not(:last-child) {
+  margin-bottom: 26px;
 }
 
 .controls {
@@ -673,6 +680,31 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+}
+
+.rations__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+.rations__dots-item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #961914;
+}
+
+.rations__dots-item.active {
+  background-color: #961914;
+}
+
+.rations__dots-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .rations__calculation {

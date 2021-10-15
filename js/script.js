@@ -26,33 +26,25 @@ $(document).ready(function () {
 		$('.header').removeClass('active');
 	});
 
-
 	$('.faq__controls').click((e) => {
 		e.target.parentElement.classList.toggle('checked');
 	});
 
-	console.log($('.faq__answer').scrollHeight());
-
-	$('.controls__item--right').click(() => {
-		$('.nutrition__item--puppies').css("rigth" , ()=>{
-			return ($('.nutrition').width() - 230) / 2;
-			
-		});
+	$.each($('.rations-cards__item') ,(inx, elem) => {
+		if (($(window).width() - $(elem).offset().left - $(elem).width()) < 0){
+			$(elem).addClass('hidden');
+		}
 	});
 
-	// let cards = $('.rations-cards__item');
-	
-	// for (let i = 0; i < cards.length; i++){
+	$.each($('.rations__dots-item'), (inx, elem) => {
+		let inxx = inx;
 
-	// 	let card = cards[i];
-
-
-	// 	if (card.offset() < 0) {
-	// 		card.addClass('hidden');
-	// 		console.log(card);
-	// 	}
-	// }
-	// console.log($('.rations').offset().left);
+		$(elem).click((e)=>{
+			let arr = $('.rations-cards__item');
+			arr[inxx]
+			console.log(e);
+		});
+	});
 
 });
 
@@ -109,3 +101,27 @@ for (let i = 0; i < popupBuyBtn.length; i++) {
 	}, false);
 }
 // /POPUPS
+
+
+
+
+const swiper = new Swiper('.barf-slider', {
+	pagination: {
+		el: '.barf-slider__pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		770: {
+			slidesPerView: 2,
+		},
+	},
+
+	simulateTouch: false,
+	autoHeight: true,
+	slidesPerView: 2,
+});

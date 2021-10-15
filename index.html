@@ -6,12 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -71,44 +70,51 @@
 					</ul>
 				</div>
 				<img src="img/Rectangle1.png" alt="Питание для собак" class="barf__image">
-				<div class="barf__nutrition nutrition">
-					<div class="nutrition__item nutrition__item--adult">
-						<p class="nutrition__title">Для взрослых</p>
-						<ul class="nutrition__list">
-							<div>
-								<li><img src="img/icons/1.svg" alt="Мясо">Мясо – 70%</li>
-								<li><img src="img/icons/2.svg" alt="Кости">Кости – 10%</li>
-								<li><img src="img/icons/3.svg" alt="Овощи">Овощи – 7%</li>
-								<li><img src="img/icons/4.svg" alt="Печень">Печень – 5%</li>
+
+				<div class="swiper barf__slider barf-slider">
+					<div class="swiper-wrapper barf-slider__wrapper">
+
+						<div class="swiper-slide barf-slider__slide barf-slide">
+							<div class="barf-slide__wrap">
+								<p class="barf-slide__title">Для взрослых</p>
+								<ul class="barf-slide__list">
+									<div>
+										<li><img src="img/icons/1.svg" alt="Мясо">Мясо – 70%</li>
+										<li><img src="img/icons/2.svg" alt="Кости">Кости – 10%</li>
+										<li><img src="img/icons/3.svg" alt="Овощи">Овощи – 7%</li>
+										<li><img src="img/icons/4.svg" alt="Печень">Печень – 5%</li>
+									</div>
+									<div>
+										<li><img src="img/icons/5.svg" alt="Субпродукты">Субпродукты – 5%</li>
+										<li><img src="img/icons/6.svg" alt="Семена/Орехи">Семена/Орехи – 2%</li>
+										<li><img src="img/icons/7.png" alt="Фрукты">Фрукты – 1%</li>
+									</div>
+								</ul>
 							</div>
-							<div>
-								<li><img src="img/icons/5.svg" alt="Субпродукты">Субпродукты – 5%</li>
-								<li><img src="img/icons/6.svg" alt="Семена/Орехи">Семена/Орехи – 2%</li>
-								<li><img src="img/icons/7.png" alt="Фрукты">Фрукты – 1%</li>
+						</div>
+						<div class="swiper-slide barf-slider__slide barf-slide">
+							<div class="barf-slide__wrap">
+								<p class="barf-slide__title">Для щенков</p>
+								<ul class="barf-slide__list">
+									<div>
+										<li><img src="img/icons/1.svg" alt="Мясо">Мясо – 58%</li>
+										<li><img src="img/icons/2.svg" alt="Кости">Кости – 17%</li>
+										<li><img src="img/icons/3.svg" alt="Овощи">Овощи – 7%</li>
+										<li><img src="img/icons/4.svg" alt="Печень">Печень – 7%</li>
+									</div>
+									<div>
+										<li><img src="img/icons/5.svg" alt="Субпродукты">Субпродукты – 7%</li>
+										<li><img src="img/icons/6.svg" alt="Семена/Орехи">Семена/Орехи – 3%</li>
+										<li><img src="img/icons/7.png" alt="Фрукты">Фрукты – 1%</li>
+									</div>
+								</ul>
 							</div>
-						</ul>
+						</div>
+
 					</div>
-					<div class="nutrition__item nutrition__item--puppies">
-						<p class="nutrition__title">Для щенков</p>
-						<ul class="nutrition__list">
-							<div>
-								<li><img src="img/icons/1.svg" alt="Мясо">Мясо – 58%</li>
-								<li><img src="img/icons/2.svg" alt="Кости">Кости – 17%</li>
-								<li><img src="img/icons/3.svg" alt="Овощи">Овощи – 7%</li>
-								<li><img src="img/icons/4.svg" alt="Печень">Печень – 7%</li>
-							</div>
-							<div>
-								<li><img src="img/icons/5.svg" alt="Субпродукты">Субпродукты – 7%</li>
-								<li><img src="img/icons/6.svg" alt="Семена/Орехи">Семена/Орехи – 3%</li>
-								<li><img src="img/icons/7.png" alt="Фрукты">Фрукты – 1%</li>
-							</div>
-						</ul>
-					</div>
-					<div class="nutrition__controls controls">
-						<div class="controls__item controls__item--left active"></div>
-						<div class="controls__item controls__item--right"></div>
-					</div>
+					<div class="swiper-pagination barf-slider__pagination"></div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -169,6 +175,12 @@
 						<div class="rations-cards__control"></div>
 						<div class="rations-cards__control"></div>
 					</div>
+				</div>
+				<div class="rations__dots">
+					<div class="rations__dots-item active"></div>
+					<div class="rations__dots-item"></div>
+					<div class="rations__dots-item"></div>
+					<div class="rations__dots-item"></div>
 				</div>
 
 
@@ -740,7 +752,7 @@
 		</div>
 	</div>
 
-
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
