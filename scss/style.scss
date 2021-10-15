@@ -336,7 +336,7 @@ section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 
-		@media (max-width: 768px) {
+		@media (max-width: 770px) {
 			grid-template-columns: 1fr;
 			justify-items: center;
 		}
@@ -428,6 +428,9 @@ section {
 
 	@media (max-width: 770px) {
 		padding: 56px 49px 0 49px;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		margin-top: 0;
 	}
 
 	@media (max-width: 360px) {
@@ -513,36 +516,6 @@ section {
 	}
 }
 
-.controls {
-	display: none;
-	justify-content: center;
-	position: absolute;
-	bottom: 24px;
-	left: 50%;
-	width: 24px;
-	height: 8px;
-	margin-left: -24px;
-
-	@media (max-width: 630px) {
-		display: flex;
-	}
-
-	&__item {
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		border: 1px solid #961914;
-
-		&.active {
-			background-color: #961914;
-		}
-
-		&:not(:last-child) {
-			margin-right: 8px;
-		}
-	}
-}
-
 .rations {
 	&__title-block {
 		display: flex;
@@ -565,9 +538,14 @@ section {
 		background-position-x: 75%;
 		background-position-y: top;
 
-		@media (max-width: 550px) {
-			width: 320px;
+		@media (max-width: 940px) {
+			padding: 5px 35px 0 0;
 			background-position-x: 100%;
+			width: 320px;
+		}
+
+		@media (max-width: 375px){
+			width: 100%;
 		}
 	}
 
