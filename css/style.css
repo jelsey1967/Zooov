@@ -1618,7 +1618,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 11;
+  z-index: 16;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
