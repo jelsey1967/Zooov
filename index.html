@@ -187,7 +187,7 @@
 
 				<div class="rations__calculation">
 					<p>Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
-					<a href="#popup2" class="button">Расчитать</a>
+					<a href="#calc" class="button button-calc">Расчитать</a>
 				</div>
 			</div>
 		</div>
@@ -447,7 +447,7 @@
 							<p>Даю согласие на обработку
 							персональных данных</p>
 						</label>
-						<button type="submit" class="form__button button">Отправить</button>
+						<a href="#thnks" class="form__button button">Отправить</a>
 					</form>
 				</div>
 			</div>
@@ -744,12 +744,61 @@
 		</div>
 	</div>
 
-	<div class="footer-popup">
-		<div class="footer-popup__area"></div>
-		<div class="footer-popup__body">
-			<div class="footer-popup__close"></div>
-			<h2 class="footer-popup__title title">Спасибо!</h2>
-			<p class="footer-popup__text">Мы ответим вам в ближайшее время.</p>
+	<div class="popup-thanks" id="thnks">
+		<a href="#header" class="popup-thanks__area"></a>
+		<div class="popup-thanks__body">
+			<a href="#header" class="popup-thanks__close"></a>
+			<h2 class="popup-thanks__title title">Спасибо!</h2>
+			<p class="popup-thanks__text">Мы ответим вам в ближайшее время.</p>
+		</div>
+	</div>
+
+	<div class="calc" id="calc">
+		<a href="#header" class="calc__area"></a>
+		<div class="calc__body">
+			<a href="#header" class="calc__close"></a>
+			<h2 class="calc__title title">Расчет рациона</h2>
+			<div class="calc__buttons">
+				<a href="#" class="calc__button button whatsapp"><img src="img/icons/WhatsappLogo.svg" alt="WhatsApp">WhatsApp</a>
+				<a href="#" class="calc__button button telegram"><img src="img/icons/TelegramLogo.svg" alt="Telegram">Telegram</a>
+			</div>
+			<p class="calc__subtitle">Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона
+			для вашего хвостика. Или напишите нам в мессендерах.</p>
+			<form action="#" class="calc__form calc-form">
+				<div class="calc-form__character">
+					<div class="calc-form__radio-wrap">
+						<label class="calc-form__radio-label">
+							<input type="radio" class="calc-form__radio" name="calc-form-radio">
+							Взрослая собака
+						</label>
+						<label class="calc-form__radio-label">
+							<input type="radio" class="calc-form__radio" name="calc-form-radio">
+							Щенок
+						</label>
+					</div>
+					<div class="calc-form__input-wrap">
+						<input type="text" class="calc-form__input" name="calc-form-weight">
+						<label for="calc-form-weight">Вес (кг)</label>
+					</div>
+					<div class="calc-form__input-wrap">
+						<input type="text" class="calc-form__input" name="calc-form-age">
+						<label for="calc-form-age">Возраст</label>
+					</div>
+					<div class="calc-form__input-wrap">
+						<input type="text" class="calc-form__input" name="calc-form-name">
+						<label for="calc-form-name">Ваше имя</label>
+					</div>
+					<label class="calc-form__checkbox">
+						<input type="checkbox" name="calc-form-checkbox">
+						Даю согласие на обработку персональных данных
+					</label>
+				</div>
+				<div class="calc-form__contact">
+					<input type="text" class="calc-form__input" name="calc-form-phone" placeholder="Телефон">
+					<textarea class="calc-form__input calc-form-comment" name="calc-form-comment" placeholder="Если у вашего хвостика есть особенности здоровья – напишите об этом..."></textarea>
+					<a href="#thnks" class="calc-form__submit button">Расчитать</a>
+				</div>
+			</form>
 		</div>
 	</div>
 

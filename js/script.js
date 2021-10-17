@@ -29,6 +29,7 @@ $(document).ready(function () {
 	$('.faq__controls').click((e) => {
 		e.target.parentElement.classList.toggle('checked');
 	});
+
 });
 
 
